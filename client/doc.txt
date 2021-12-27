@@ -1,0 +1,19 @@
+This application is used to access the application
+that manages the contents of the /tmp directory.
+
+usage:
+client command [file] [parameters]
+
+commands:
+ "help"     - print help information
+ "getall"   - prints a list of all files and their checksum on server.
+              Does not show directories.
+ "get"      - downloads from server the specified file to the current directory
+ "upload"   - upload to server specified file
+ "update"   - Update the specified file on the server.
+              That is, it replaces the old file with the same name
+ "delete"   - Delete the specified file on the server
+
+parameters: (you can specify via the config file)
+ "port" - port of destination server
+ "addr" - address of destination server

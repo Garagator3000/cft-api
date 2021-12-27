@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  server:
+    build: ./
+    command: ./tmp-server
+    ports:
+      - '8080:8080'
